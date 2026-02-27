@@ -15,4 +15,3 @@ def formulario_view(request):
     
     return render(request, "formulario/formulario.html", {"form": form})
 
-# Create your views here.

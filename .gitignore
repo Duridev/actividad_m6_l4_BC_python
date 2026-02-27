@@ -1,0 +1,20 @@
+# Entorno virtual
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Base de datos
+db.sqlite3
+
+# Archivos de entorno
+.env
+
+# VSCode
+.vscode/
+
+# Mac (por si acaso)
+.DS_Store

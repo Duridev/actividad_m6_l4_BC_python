@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+
+    <div>
+        <label>Nombre:</label>
+        {{ form.nombre }}
+        {% if form.nombre.errors %}
+            <p style="color:red;">{{ form.nombre.errors }}</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <label>Correo:</label>
+        {{ form.correo }}
+        {% if form.correo.errors %}
+            <p style="color:red;">{{ form.correo.errors }}</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <label>Mensaje:</label>
+        {{ form.mensaje }}
+        {% if form.mensaje.errors %}
+            <p style="color:red;">{{ form.mensaje.errors }}</p>
+        {% endif %}
+    </div>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+{% endblock %}
